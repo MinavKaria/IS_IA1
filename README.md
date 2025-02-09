@@ -28,8 +28,8 @@ Ensure you have the following installed:
 
 ### 2️⃣ Clone the Repository
 ```sh
-git clone https://github.com/yourusername/IS_IA1_Arcjet.git
-cd IS_IA1_Arcjet
+git clone https://github.com/minavkaria/IS_IA1.git
+cd IS_IA1
 ```
 
 ### 3️⃣ Install Dependencies
@@ -115,6 +115,13 @@ Expected Response:
 {"error":"Rate limit exceeded"}
 ```
 
+### ❌ **Shield WAF (Protects from Common Attacks)**
+```sh
+for i in {1..6}; do  
+  curl -L -X GET "https://is-ia-1.vercel.app/api/v1/users" -H "x-arcjet-suspicious: true";   
+  echo "Request $i sent"; 
+done
+```
 ---
 
 ## 📌 Conclusion
