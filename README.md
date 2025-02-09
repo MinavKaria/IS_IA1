@@ -99,7 +99,7 @@ Expected Response:
 
 ### ❌ **Bot Simulation (Blocked)**
 ```sh
-curl -X GET http://localhost:3000/api/v1/users -H "User-Agent: FakeBot/1.0"
+curl -X GET https://is-ia-1.vercel.app/api/v1/users -H "User-Agent: python-requests/2.26.0"
 ```
 Expected Response:
 ```json
