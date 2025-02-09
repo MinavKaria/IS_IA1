@@ -7,7 +7,7 @@ const aj = arcjet({
     shield({ mode: "LIVE" }),
     detectBot({
       mode: "LIVE",
-      allow: [ "CATEGORY:SEARCH_ENGINE","CURL"],
+      allow: [ "CATEGORY:SEARCH_ENGINE","CURL","CATEGORY:VERCEL"],
     }),
     tokenBucket({
       mode: "LIVE",
